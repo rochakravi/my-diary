@@ -1,3 +1,8 @@
+# Goal #MVP
+
+# Adding task and showing them 
+
+
 # JSON server
 
 json-server --watch db.json --port 2000
