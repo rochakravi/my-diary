@@ -1,0 +1,40 @@
+fieldset {
+    width: 330px;
+    margin: auto;
+}
+
+.legend {
+    font-size: 28px;
+    color: #0d59dee6;
+
+}
+
+.input {
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+// button {
+//     height: 35px;
+//     padding: 5px 10px;
+// }
+
+li {
+    //display: flex;
+    // flex-direction: row;
+    //justify-content: flex-end;
+    // align-items: center;
+    // list-style: none;
+    // border: 1px solid lightblue;
+    // border-radius: 8px;
+    // margin: 10px auto;
+    // padding: 4px 24px;
+    width: 87px;
+
+    p {
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 1rem;
+    }
+}

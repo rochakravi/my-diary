@@ -1,0 +1,93 @@
+.finance {
+    display: flex;
+    justify-content: space-around;
+
+    fieldset {
+        display: flex;
+        align-items: end;
+    }
+
+    .liability {
+
+        thead {
+            border: 2px solid red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+        tr {
+            border: 1px solid red;
+        }
+
+        td {
+            padding: 2px 20px;
+        }
+
+
+    }
+}
+
+
+
+
+// *   *???
+
+.card {
+    background-color: #2063d3;
+    padding: 15px;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+h1,
+h3,
+h6 {
+    margin: 0;
+    // color: white;
+}
+
+.expenseRatio {
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+.balance {
+    text-align: right;
+    color: #abd3ab;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+
+}
+
+.white {
+    color: white;
+}
+
+.headingPanel {
+    display: flex;
+    background: aliceblue;
+    width: 60%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+@media (max-width : 1300px) {
+    .headingPanel {
+        width: 70%;
+    }
+
+    .red {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width : 1100px) {
+    .headingPanel {
+        width: 98%;
+    }
+}

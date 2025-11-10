@@ -1,0 +1,12 @@
+.lender-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-between;
+}

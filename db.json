@@ -1,0 +1,111 @@
+{
+  "activities": [
+    {
+      "activity": {
+        "name": "walk",
+        "status": false
+      },
+      "id": 1
+    },
+    {
+      "activity": {
+        "name": "dance",
+        "status": false
+      },
+      "id": 2
+    }
+  ],
+  "liabilities": [
+    {
+      "date": "2023-12-28",
+      "towards": "Self Lic Premium",
+      "amount": 12500,
+      "status": "upcoming",
+      "id": 1
+    },
+    {
+      "date": "2023-12-30",
+      "towards": "Axis Bank Credit Card",
+      "amount": 8935,
+      "status": "upcoming",
+      "id": 2
+    },
+    {
+      "date": "2023-12-30",
+      "towards": "Axis Bank Credit Card",
+      "amount": 2670,
+      "status": "upcoming",
+      "id": 3
+    },
+    {
+      "date": "2024-01-01",
+      "towards": "asmita salary",
+      "amount": 30000,
+      "status": "upcoming",
+      "id": 4
+    },
+    {
+      "date": "2024-01-02",
+      "towards": "bajaj finance",
+      "amount": 7500,
+      "status": "upcoming",
+      "id": 5
+    },
+    {
+      "date": "2023-12-02",
+      "towards": "ICICI EMI",
+      "amount": "12500",
+      "status": "upcoming",
+      "id": 6
+    },
+    {
+      "date": "2023-12-02",
+      "towards": "Bullet EMI",
+      "amount": "5400",
+      "status": "upcoming",
+      "id": 7
+    },
+    {
+      "date": "2023-12-01",
+      "towards": "Rent",
+      "amount": "7000",
+      "status": "upcoming",
+      "id": 8
+    },
+    {
+      "date": "2023-12-10",
+      "towards": "AXIS EMI",
+      "amount": "12500",
+      "status": "upcoming",
+      "id": 9
+    }
+  ],
+  "dues": [
+    {
+      "receiver": "Alok Painter",
+      "amount": 5000,
+      "priority": "low",
+      "id": 1
+    },
+    {
+      "receiver": "Laxmi Kirana dukan",
+      "amount": 8000,
+      "priority": "medium",
+      "id": 1
+    }
+  ],
+  "goal": [
+    {
+      "lender": "Bajaj",
+      "amount": 750000,
+      "duedate": "upcoming",
+      "id": 1
+    },
+    {
+      "lender": "Self Lic Premium",
+      "amount": 12500,
+      "duedate": "upcoming",
+      "id": 1
+    }
+  ]
+}

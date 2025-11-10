@@ -1,0 +1,256 @@
+// Button Styles
+$button-background-color: #007bff; // Default button background color
+$button-text-color: #ffffff; // Default button text color
+$button-border-radius: 4px; // Button border radius
+$button-padding: 10px 20px; // Button padding
+$button-border: 1px solid transparent; // Button border
+
+$button-border-color: #007bff; // Border color for outline button
+$button-text-color: white; // Text color for outline button
+// $button-hover-background-color: #007bff; // Background color on hover for outline button
+// $button-hover-text-color: #ffffff; // Text color on hover for outline button
+
+
+.button {
+    display: inline-block;
+    padding: $button-padding;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: $button-border-radius;
+    border: $button-border;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+    // Default button styles
+    background-color: $button-background-color;
+    color: $button-text-color;
+
+    &:hover {
+        background-color: darken($button-background-color, 10%);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: lighten($button-background-color, 10%);
+        box-shadow: 0 0 0 2px lighten($button-background-color, 10%);
+    }
+
+    &:active {
+        background-color: lighten($button-background-color, 10%);
+    }
+
+    // Custom button variants
+    &.primary {
+        background-color: $button-background-color;
+        color: $button-text-color;
+
+        &:hover {
+            background-color: darken($button-background-color, 10%);
+        }
+
+        &:focus {
+            border-color: lighten($button-background-color, 10%);
+            box-shadow: 0 0 0 2px lighten($button-background-color, 10%);
+        }
+
+        &:active {
+            background-color: lighten($button-background-color, 10%);
+        }
+    }
+
+    &.secondary {
+        background-color: #6c757d; // Custom secondary button background color
+        color: #ffffff; // Custom secondary button text color
+
+        &:hover {
+            background-color: darken(#6c757d, 10%);
+        }
+
+        &:focus {
+            border-color: lighten(#6c757d, 10%);
+            box-shadow: 0 0 0 2px lighten(#6c757d, 10%);
+        }
+
+        &:active {
+            background-color: lighten(#6c757d, 10%);
+        }
+    }
+
+    // Add more variants as needed
+}
+
+
+
+.primary {
+    @extend .button;
+    background-color: $button-background-color;
+    color: $button-text-color;
+
+    &:hover {
+        background-color: darken($button-background-color, 10%);
+    }
+
+    &:focus {
+        border-color: lighten($button-background-color, 10%);
+        box-shadow: 0 0 0 2px lighten($button-background-color, 10%);
+    }
+
+    &:active {
+        background-color: lighten($button-background-color, 10%);
+    }
+}
+
+.secondary {
+    @extend .button;
+    background-color: #6c757d; // Custom secondary button background color
+    color: #ffffff; // Custom secondary button text color
+
+    &:hover {
+        background-color: darken(#6c757d, 10%);
+    }
+
+    &:focus {
+        border-color: lighten(#6c757d, 10%);
+        box-shadow: 0 0 0 2px lighten(#6c757d, 10%);
+    }
+
+    &:active {
+        background-color: lighten(#6c757d, 10%);
+    }
+}
+
+.outline {
+
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid $button-border-color; // Border with specified color
+    color: $button-text-color; // Text color with specified color
+    border-radius: 4px;
+    background-color: transparent; // Transparent background
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; // Smooth transition for hover effect
+
+    // &:hover {
+    //     background-color: $button-hover-background-color; // Change background color on hover
+    //     color: $button-hover-text-color; // Change text color on hover
+    // }
+}
+
+.danger {
+    @extend .button;
+    background-color: #6c757d; // Custom secondary button background color
+    color: #ffffff; // Custom secondary button text color
+
+    &:hover {
+        background-color: darken(#6c757d, 10%);
+    }
+
+    &:focus {
+        border-color: lighten(#6c757d, 10%);
+        box-shadow: 0 0 0 2px lighten(#6c757d, 10%);
+    }
+
+    &:active {
+        background-color: lighten(#6c757d, 10%);
+    }
+}
+
+.success {
+    @extend .button;
+    background-color: #6c757d; // Custom secondary button background color
+    color: #ffffff; // Custom secondary button text color
+
+    &:hover {
+        background-color: darken(#6c757d, 10%);
+    }
+
+    &:focus {
+        border-color: lighten(#6c757d, 10%);
+        box-shadow: 0 0 0 2px lighten(#6c757d, 10%);
+    }
+
+    &:active {
+        background-color: lighten(#6c757d, 10%);
+    }
+}
+
+.warning {
+    @extend .button;
+    background-color: #6c757d; // Custom secondary button background color
+    color: #ffffff; // Custom secondary button text color
+
+    &:hover {
+        background-color: darken(#6c757d, 10%);
+    }
+
+    &:focus {
+        border-color: lighten(#6c757d, 10%);
+        box-shadow: 0 0 0 2px lighten(#6c757d, 10%);
+    }
+
+    &:active {
+        background-color: lighten(#6c757d, 10%);
+    }
+}
+
+.disabled {
+    @extend .button;
+    background-color: #6c757d; // Custom secondary button background color
+    color: #ffffff; // Custom secondary button text color
+
+    &:hover {
+        background-color: darken(#6c757d, 10%);
+    }
+
+    &:focus {
+        border-color: lighten(#6c757d, 10%);
+        box-shadow: 0 0 0 2px lighten(#6c757d, 10%);
+    }
+
+    &:active {
+        background-color: lighten(#6c757d, 10%);
+    }
+}
+
+.icon {
+    @extend .button;
+    background-color: #6c757d; // Custom secondary button background color
+    color: #ffffff; // Custom secondary button text color
+
+    &:hover {
+        background-color: darken(#6c757d, 10%);
+    }
+
+    &:focus {
+        border-color: lighten(#6c757d, 10%);
+        box-shadow: 0 0 0 2px lighten(#6c757d, 10%);
+    }
+
+    &:active {
+        background-color: lighten(#6c757d, 10%);
+    }
+}
+
+.link {
+    @extend .button;
+    background-color: #6c757d; // Custom secondary button background color
+    color: #ffffff; // Custom secondary button text color
+
+    &:hover {
+        background-color: darken(#6c757d, 10%);
+    }
+
+    &:focus {
+        border-color: lighten(#6c757d, 10%);
+        box-shadow: 0 0 0 2px lighten(#6c757d, 10%);
+    }
+
+    &:active {
+        background-color: lighten(#6c757d, 10%);
+    }
+}
